@@ -1,0 +1,77 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "image": "./images/portfolio/web-1.webp",
+        "category": "Web design",
+        "title": "Web design 1"
+      },
+      {
+        "id": 2,
+        "image": "./images/portfolio/mobile-1.jpg",
+        "category": "Mobile app",
+        "title": "Mobile app 1"
+      },
+      {
+        "id": 3,
+        "image": "./images/portfolio/photo-1.jpg",
+        "category": "Photography",
+        "title": "Photography 1"
+      },
+      {
+        "id": 4,
+        "image": "./images/portfolio/web-2.webp",
+        "category": "Web design",
+        "title": "Web design 2"
+      },
+      {
+        "id": 5,
+        "image": "./images/portfolio/mobile-2.jpg",
+        "category": "Mobile app",
+        "title": "Mobile app 2"
+      },
+      {
+        "id": 6,
+        "image": "./images/portfolio/photo-2.jpg",
+        "category": "Photography",
+        "title": "Photography 2"
+      },
+      {
+        "id": 7,
+        "image": "./images/portfolio/web-3.webp",
+        "category": "Web design",
+        "title": "Web design 3"
+      },
+      {
+        "id": 8,
+        "image": "./images/portfolio/mobile-3.jpg",
+        "category": "Mobile app",
+        "title": "Mobile app 3"
+      },
+      {
+        "id": 9,
+        "image": "./images/portfolio/photo-3.jpg",
+        "category": "Photography",
+        "title": "Photography 3"
+      },
+      {
+        "id": 10,
+        "image": "./images/portfolio/photo-4.webp",
+        "category": "Photography",
+        "title": "Photography 4"
+      },
+      {
+        "id": 11,
+        "image": "./images/portfolio/web-4.webp",
+        "category": "Web design",
+        "title": "Web design 4"
+      },
+      {
+        "id": 12,
+        "image": "./images/portfolio/photo-6.jpg",
+        "category": "Photography",
+        "title": "Photography 6"
+      }
+    ]
+  }
+  

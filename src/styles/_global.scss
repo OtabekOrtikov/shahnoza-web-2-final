@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Epilogue, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s ease;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.submenu {
+  cursor: pointer;
+  position: relative;
+  height: auto;
+  width: auto;
+  transition: all 0.3s ease;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-list {
+    left: -50%;
+    transition: transform 0.3s ease;
+    transform: scaleY(0);
+    transform-origin: top;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    top: 120%;
+    width: 200%;
+    position: absolute;
+
+    @extend %df-c-c-c;
+
+    &__item {
+      width: 100%;
+      list-style-type: none;
+
+      a {
+        display: block;
+        color: $primary;
+        width: 100%;
+        padding: 10px 15px;
+        background-color: $white;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: $white !important;
+          background-color: rgba($color: $primary, $alpha: 60%) !important;
+        }
+      }
+    }
+
+    &.active {
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+      transform: scaleY(1);
+      transition: all 0.3s ease;
+    }
+  }
+
+  &.active {
+    p {
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.burger {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+  display: none;
+
+  &__line {
+    margin: 4px 0;
+    width: 100%;
+    height: 3px;
+    background-color: $white;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    &__line {
+      background-color: $primary;
+    }
+  }
+
+  &.active {
+    &__line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    &__line:nth-child(2) {
+      opacity: 0;
+    }
+
+    &__line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: $black;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Contact | Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <nav class="header-nav">
+          <a href="#" class="header-nav__logo">
+            <img src="./images/logo.png" alt="Logo" />
+          </a>
+          <ul class="header-nav__list">
+            <li class="header-nav__list-item">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="about.html">About</a>
+            </li>
+            <li class="header-nav__list-item submenu">
+              <p>
+                Services
+                <img
+                  class="icon icon-arrowDown"
+                  src="images/icons/arrow-down.svg"
+                  alt=""
+                />
+              </p>
+              <ul class="submenu-list">
+                <li class="submenu-list__item">
+                  <a href="#">Service 1</a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="#">Service 2</a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="#">Service 3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="#">Portfolio</a>
+            </li>
+          </ul>
+          <a class="header-nav__contact" href="contact.html">Contact</a>
+          <div class="burger">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+          </div>
+        </nav>
+      </div>
+      <div class="header-page">
+        <h1 class="header-page__title">Contacts</h1>
+        <p class="header-page__description">
+          Agency provides a full service range including technical skills,
+          design, business understanding.
+        </p>
+      </div>
+    </header>
+    <main class="contact-main">
+      <div class="container">
+        <form method="post" class="contact-main__form">
+          <h2 class="contact-main__form-title">Get In Touch</h2>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+          />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+          />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+          ></textarea>
+          <div class="contact-main__form-btn">
+            <button type="submit">Submit Now</button>
+          </div>
+        </form>
+      </div>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A8145b619ae881b6a3aa0b1531a615dac0bf4e347f176901251fe4f86dba75b8d&amp;source=constructor"
+        width="100%"
+        height="400"
+        frameborder="0"
+      ></iframe>
+    </main>
+
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>

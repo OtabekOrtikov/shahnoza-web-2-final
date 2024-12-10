@@ -1,5 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "variables";
+@import "global";
+@import "header";
+@import "about";
+@import "portfolio";
+@import "footer";
+@import "about-page";
+@import "contact-page";
+

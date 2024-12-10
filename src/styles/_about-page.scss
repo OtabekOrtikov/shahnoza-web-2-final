@@ -1,0 +1,36 @@
+.about-main {
+    padding: 50px 0;
+    background-color: $light-brown;
+
+    &__content {
+        gap: 20px;
+
+        @extend %df-sb-c;
+
+        * {
+            width: 50%;
+        }
+
+        h2 {
+            font-size: 56px;
+            color: $brown;
+        }
+
+        p {
+            font-size: 16px;
+            color: $black;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-main {
+        &__content {
+            flex-direction: column;
+
+            * {
+                width: 100%;
+            }
+        }
+    }
+}

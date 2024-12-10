@@ -1,0 +1,33 @@
+$primary: #ef6d58;
+$white: #fff;
+$black: #2a2a2a;
+$grey: rgba($white, $alpha: 0.6);
+$second: #28293e;
+$light-brown: #fdf0e9;
+$brown: #391400;
+
+%df-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%df-c-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+%df-sb-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

@@ -1,0 +1,79 @@
+.footer {
+    background-color: $light-brown;
+    background-image: linear-gradient(180deg, $light-brown 50%, $white 50%);
+    padding: 50px 0;
+
+    &-content {
+        width: 100%;
+        height: auto;
+        background-color: $primary;
+        padding: 40px 100px;
+        border-radius: 5px;
+        gap: 10px;
+
+        @extend %df-c-c;
+
+        &__item {
+            h2 {
+                font-size: 56px;
+                color: $white;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 30px;
+                color: $grey;
+            }
+
+            a {
+                padding: 16px 24px;
+                text-transform: uppercase;
+                color: $brown;
+                background-color: $white;
+                border-radius: 5px;
+                font-weight: 700;
+                font-size: 14px;
+                transition: all 0.3s ease;
+
+                &:hover, &:active {
+                    background-color: $light-brown;
+                }
+            }
+
+            img {
+                max-width: 400px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        &-content {
+            padding: 40px 20px;
+
+            &__item {
+                h2 {
+                    font-size: 36px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                a {
+                    padding: 12px 20px;
+                    font-size: 12px;
+                }
+
+                img {
+                    display: none;
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}

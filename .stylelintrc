@@ -1,0 +1,26 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "scss/at-rule-no-unknown": null,
+    "import-notation": null,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "import",
+          "include",
+          "mixin",
+          "use",
+          "forward",
+          "extend"
+        ]
+      }
+    ],
+    "selector-class-pattern": [
+      "^[a-z0-9]+([_-]{1,2}[a-z0-9]+)*$",
+      {
+        "message": "Expected class selector to follow kebab-case or BEM (block__element--modifier)"
+      }
+    ]
+  }
+}
